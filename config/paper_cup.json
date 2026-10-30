@@ -1,0 +1,11 @@
+{
+  "object": "mcdonalds_paper_cup",
+  "geometry_confirmed": true,
+  "bottom_radius_m": 0.025,
+  "top_radius_m": 0.05,
+  "height_m": 0.12,
+  "wall_thickness_m": 0.0015,
+  "mass_kg": 0.018,
+  "source": "User confirmed DIAMETERS: bottom5cm, top10cm, height12cm. Wall/mass remain rigid simulation assumptions.",
+  "reference_image": "assets/references/mcdonalds-paper-cup.jpeg"
+}

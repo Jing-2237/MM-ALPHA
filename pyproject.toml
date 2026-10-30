@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aloha2-lab"
+version = "0.1.0"
+description = "ALOHA 2 simulation, demonstration collection and action-chunk behavior cloning"
+requires-python = ">=3.10"
+dependencies = ["numpy==1.26.4", "mujoco==3.3.7", "h5py==3.14.0", "PyYAML==6.0.2", "Pillow>=10", "pytest>=8,<9"]
+
+[project.scripts]
+aloha-lab = "aloha2_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# These are pure Python tests; ROS launch plugins need distro-only dependencies.
+addopts = "-p no:launch_testing -p no:launch_ros"

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aloha2_lab_bringup</name><version>0.1.0</version>
+  <description>Local ALOHA 2 MuJoCo simulation launch</description>
+  <maintainer email="local@example.invalid">Local operator</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>launch_ros</exec_depend><exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend><exec_depend>rosgraph_msgs</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

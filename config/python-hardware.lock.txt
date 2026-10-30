@@ -1,0 +1,9 @@
+absl-py==2.5.1
+cffi==1.17.1
+dm-env==1.6
+dm-tree==0.1.8
+h5py==3.14.0
+modern-robotics==1.1.1
+pycparser==2.22
+pyquaternion==0.9.9
+tqdm==4.67.1

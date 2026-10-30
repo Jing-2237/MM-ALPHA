@@ -1,0 +1,23 @@
+{
+  "object": "mcdonalds_paper_cup",
+  "geometry_confirmed": true,
+  "bottom_radius_m": 0.025,
+  "top_radius_m": 0.05,
+  "height_m": 0.12,
+  "wall_thickness_m": 0.0015,
+  "mass_kg": 0.018,
+  "source": "User confirmed DIAMETERS: bottom5cm, top10cm, height12cm. Wall/mass remain rigid simulation assumptions.",
+  "reference_image": "assets/references/mcdonalds-paper-cup.jpeg",
+  "contact_revision": 3,
+  "grasp_pitch_degrees": 35,
+  "grasp_height_m": 0.021,
+  "grasp_tcp_x_offset_m": 0.0,
+  "close_target_m": 0.031,
+  "initial_open_steps": 60,
+  "max_penetration_m": 0.0005,
+  "gripper_force_limit_n": 3.0,
+  "teacher_revision": 4,
+  "extra_squeeze_steps": 20,
+  "extra_squeeze_step_m": 2.5e-05,
+  "minimum_side_force_n": 0.15
+}

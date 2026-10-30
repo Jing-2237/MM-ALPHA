@@ -1,0 +1,9 @@
+# Registered BLUE cylindrical cup, radius about24mm, height80mm, on table z=0.
+# This baseline is not a general semantic cup detector. Measure calibration before use.
+calibration_validated: false
+rgb_topic: /camera_high/camera/color/image_rect_raw
+aligned_depth_topic: /camera_high/camera/aligned_depth_to_color/image_raw
+camera_info_topic: /camera_high/camera/color/camera_info
+optical_frame: camera_high_color_optical_frame
+table_frame: table
+T_table_optical: null

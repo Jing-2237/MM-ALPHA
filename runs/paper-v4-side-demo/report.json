@@ -1,0 +1,41 @@
+{
+  "spawn_xy": [
+    0.008926449499760007,
+    0.06128404905515422
+  ],
+  "visual_latent": [
+    0.2025287002325058,
+    0.04222428798675537,
+    1.0729105472564697
+  ],
+  "success": true,
+  "final_height_m": 0.20676843574181372,
+  "min_hold_height_m": 0.2035770301562904,
+  "finger_contacts": [
+    "left/left_finger_link",
+    "left/right_finger_link"
+  ],
+  "policy_inputs": [
+    "initial_RGB",
+    "initial_depth_m",
+    "validity"
+  ],
+  "runtime_ik": false,
+  "runtime_detector": false,
+  "hardware_motion_commanded": false,
+  "max_penetration_m": 1.7940964641766674e-05,
+  "max_preclose_penetration_m": 8.284690215394717e-06,
+  "max_hand_table_penetration_m": 0.00019975717680032617,
+  "max_finger_force_n": 3.2731575767667835,
+  "nonfinger_contact_substeps": 0,
+  "penetration_limit_m": 0.0005,
+  "collision_pass": true,
+  "hold_slip_m": 3.730804566281031e-05,
+  "max_hold_tilt_degrees": 1.6589725922942675,
+  "stable_hold": true,
+  "side_wall_pinch": true,
+  "side_wall_normal_forces_n": {
+    "left": 1.484879351398707,
+    "right": 1.4877943503589983
+  }
+}

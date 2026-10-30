@@ -1,0 +1,29 @@
+{
+  "stale_feedback": {
+    "calls": [
+      "succeed"
+    ],
+    "returned_position": 0.04,
+    "observation_stamp_s": 0,
+    "requested_max_effort": 0.01,
+    "returned_effort": 0.5
+  },
+  "result_timeout": {
+    "calls": [
+      "abort"
+    ],
+    "returned_position": null,
+    "observation_stamp_s": 0,
+    "requested_max_effort": 0.01,
+    "returned_effort": null
+  },
+  "late_acceptance": {
+    "calls": [
+      "abort"
+    ],
+    "returned_position": null,
+    "observation_stamp_s": 0,
+    "requested_max_effort": 0.01,
+    "returned_effort": null
+  }
+}

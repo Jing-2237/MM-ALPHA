@@ -1,0 +1,45 @@
+# Local planning/recording config. It does NOT override the upstream launch YAML.
+robot: aloha_stationary
+hardware_confirmed: false
+calibration_validated: false
+control_rate_hz: 50
+storage:
+  min_free_gib: 5.0
+  check_interval_s: 1.0
+arm_order: [follower_left, follower_right]
+arm_joint_order: [waist, shoulder, elbow, forearm_roll, wrist_angle, wrist_rotate]
+# Raw hardware values are intentionally NOT converted to the simulation schema.
+gripper_calibration: null
+camera_serials:
+  camera_high: null
+  camera_low: null
+  camera_wrist_left: null
+  camera_wrist_right: null
+required_topics:
+  /follower_left/joint_states: sensor_msgs/msg/JointState
+  /follower_right/joint_states: sensor_msgs/msg/JointState
+  /leader_left/joint_states: sensor_msgs/msg/JointState
+  /leader_right/joint_states: sensor_msgs/msg/JointState
+  /follower_left/commands/joint_group: interbotix_xs_msgs/msg/JointGroupCommand
+  /follower_right/commands/joint_group: interbotix_xs_msgs/msg/JointGroupCommand
+  /follower_left/commands/joint_single: interbotix_xs_msgs/msg/JointSingleCommand
+  /follower_right/commands/joint_single: interbotix_xs_msgs/msg/JointSingleCommand
+  /camera_high/camera/color/image_rect_raw: sensor_msgs/msg/Image
+  /camera_low/camera/color/image_rect_raw: sensor_msgs/msg/Image
+  /camera_wrist_left/camera/color/image_rect_raw: sensor_msgs/msg/Image
+  /camera_wrist_right/camera/color/image_rect_raw: sensor_msgs/msg/Image
+# Required depth and calibration for the primary training camera. Enable
+# depth + align_depth.enable in the RealSense bringup; RGB-only collection fails here.
+  /camera_high/camera/aligned_depth_to_color/image_raw: sensor_msgs/msg/Image
+  /camera_high/camera/color/camera_info: sensor_msgs/msg/CameraInfo
+optional_topics:
+  /tf: tf2_msgs/msg/TFMessage
+  /tf_static: tf2_msgs/msg/TFMessage
+  /camera_low/camera/aligned_depth_to_color/image_raw: sensor_msgs/msg/Image
+  /camera_wrist_left/camera/aligned_depth_to_color/image_raw: sensor_msgs/msg/Image
+  /camera_wrist_right/camera/aligned_depth_to_color/image_raw: sensor_msgs/msg/Image
+  /camera_low/camera/color/camera_info: sensor_msgs/msg/CameraInfo
+  /camera_wrist_left/camera/color/camera_info: sensor_msgs/msg/CameraInfo
+  /camera_wrist_right/camera/color/camera_info: sensor_msgs/msg/CameraInfo
+  /follower_left/commands/joint_trajectory: interbotix_xs_msgs/msg/JointTrajectoryCommand
+  /follower_right/commands/joint_trajectory: interbotix_xs_msgs/msg/JointTrajectoryCommand

@@ -1,0 +1,41 @@
+{
+  "repositories": {
+    "interbotix_ros_manipulators": {
+      "url": "https://github.com/Interbotix/interbotix_ros_manipulators.git",
+      "commit": "b66d5b905725351dd71d3251a06cd3f4c777940f"
+    },
+    "interbotix_xs_driver": {
+      "url": "https://github.com/Interbotix/interbotix_xs_driver.git",
+      "commit": "da27b8b2b6c7677844f74581b82c01829a834e1c"
+    },
+    "interbotix_ros_core": {
+      "url": "https://github.com/Interbotix/interbotix_ros_core.git",
+      "commit": "af18d4fe24ba08e09a0f1e92afaca1863e3205de"
+    },
+    "dynamixel-workbench": {
+      "url": "https://github.com/Interbotix/dynamixel-workbench.git",
+      "commit": "3ed8229d2382c4d0931b471fbe1c83a4888da6a8"
+    },
+    "interbotix_ros_toolboxes": {
+      "url": "https://github.com/Interbotix/interbotix_ros_toolboxes.git",
+      "commit": "f52234371b9ec1cb1f5ee8241da32e6b8476fa5c"
+    },
+    "interbotix_aloha": {
+      "url": "https://github.com/Interbotix/aloha.git",
+      "commit": "58137bbc2675898b563fe7890fc3f14130c7ec80"
+    }
+  },
+  "packages": {
+    "interbotix_xsarm_descriptions": "third_party/interbotix_ros_manipulators/interbotix_ros_xsarms/interbotix_xsarm_descriptions",
+    "interbotix_xsarm_control": "third_party/interbotix_ros_manipulators/interbotix_ros_xsarms/interbotix_xsarm_control",
+    "interbotix_xs_driver": "third_party/interbotix_xs_driver",
+    "interbotix_xs_msgs": "third_party/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_msgs",
+    "interbotix_xs_sdk": "third_party/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk",
+    "dynamixel_workbench_toolbox": "third_party/dynamixel-workbench",
+    "interbotix_gravity_compensation": "third_party/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_gravity_compensation",
+    "interbotix_common_modules": "third_party/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules",
+    "interbotix_xs_modules": "third_party/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_modules",
+    "aloha": "third_party/interbotix_aloha"
+  },
+  "excluded_mobile_only_dependency": "interbotix_ros_slate"
+}
